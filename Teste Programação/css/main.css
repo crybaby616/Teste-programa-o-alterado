@@ -1,0 +1,152 @@
+/*GLOBALS*/
+body {
+    font-family: 'Myriad Pro';
+    background-color: #cccccc;
+    margin: 0;
+    text-align: center;
+    
+    
+  }
+  
+  h1 {
+    font-size: 3em;
+    font-family: 'Myriad Pro';
+    line-height: 3;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  p {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav {
+    height: 130px;
+    width: 100%;
+    background-color: rgb(0, 102, 255);
+    color: #eee;
+    font-size: 135%;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    display: inline;
+  }
+  .navIcon{
+      display: block; 
+      height: 100px;
+      width: 150px;
+      padding: 14px 14px;
+      float: left;
+   
+  }
+  nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+  }
+  nav li:hover {
+    background-color: #444;
+  }
+  nav a#openup {
+    display: none;
+  }
+  
+  @media screen and (max-width: 580px) {
+    h1 {
+      font-size: 2.8em;
+    }
+  
+    nav {
+      height: auto;
+      border-bottom: 0;
+    }
+    nav ul {
+      display: none;
+      height: auto;
+    }
+    nav li {
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+    nav a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+      background: #333;
+      border-bottom: 1px solid #555;
+    }
+    nav a:hover {
+      background: #444;
+    }
+    nav a#openup:after {
+      content: "|||";
+      transform: rotate(-90deg);
+      /* IE 9 */
+      -ms-transform: rotate(-90deg);
+      /* Safari */
+      -webkit-transform: rotate(-90deg);
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 20px;
+    }
+    nav a#openup {
+      display: block;
+      background-color: #333;
+      width: 100%;
+      position: relative;
+    }
+  }
+  .cf:before, .cf:after {
+    content: "";
+    display: table;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  .cf {
+    zoom: 1;
+  }
+
+  .footer{
+    background: #9b9b9b;
+    height: 130px;
+  }
+  
+  .footerDivider{
+    width:25%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 15px;
+  }
+  
+  .footerText{
+    font-family: myriad-pro, sans-serif;
+    font-style: normal; 
+    font-weight: 300;
+    font-size: 100%;
+    text-align: left;
+  }
+  
+  .footerContacts{
+    float: left;
+    margin-left:8%;
+    margin-top: 15px;
+  }
+  
+  
+  
